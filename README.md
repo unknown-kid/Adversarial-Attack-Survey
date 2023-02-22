@@ -61,22 +61,22 @@
 | 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
 |---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|
 | ZOO           | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/huanzhang12/ZOO-Attack) | 双线性插值            | Cifar10、MNIST、ImageNet       |
-| NES           | × | √   | × | √ | √   | Loo      | https://cloud.google.com/vision/   | [代码](https://github.com/labsix/limited-blackbox-attacks)          | 无  | ImageNet     |
+| NES           | × | √   | × | √ | √   | Loo      | GV   | [代码](https://github.com/labsix/limited-blackbox-attacks)          | 无  | ImageNet     |
 | AutoZOOM      | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/IBM/Autozoom-Attack)    | 双线性插值            | Cifar10、MNIST、ImageNet       |
 | Meta Attack   | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/dydjw9/MetaAttack_ICLR2020/) | 无  | Cifar10、MNIST、ImageNet       |
 | Bandits       | × | √   | × | × | √   | L2、Loo  | 无  | [代码](https://github.com/MadryLab/blackbox-bandits)   | 无  | ImageNet     |
-| SimBA         | × | √   | × | √ | √   | L2       | https://cloud.google.com/vision/   | [代码](https://github.com/cg563/simple-blackbox-attack) | DCT | Cifar10、ImageNet |
-| LSA           | × | √   | × | √ | ×   | L0       | 无  | 无| 无  | MNIST、cifar10、SVHN、STL10、ImageNet |
+| SimBA         | × | √   | × | √ | √   | L2       | GV  | [代码](https://github.com/cg563/simple-blackbox-attack) | DCT | Cifar10、ImageNet |
+| LSA           | × | √   | × | √ | ×   | L0       | 无  | 无  | 无  | MNIST、cifar10、SVHN、STL10、ImageNet |
 | NATTACK       | × | √   | × | √ | √   | L2、Loo  | 无  | [代码](https://github.com/Cold-Winter/Nattack)    | 无  | Cifar10、ImageNet |
-| PPBA          | × | √   | × | √ | √   | L2、Loo  | https://cloud.google.com/vision/docs/drag-and-drop            | [代码](https://github.com/theFool32/PPBA) | DCT | ImageNet     |
+| PPBA          | × | √   | × | √ | √   | L2、Loo  | GV  | [代码](https://github.com/theFool32/PPBA) | DCT | ImageNet     |
 | Square Attack | × | √   | × | √ | √   | L2、Loo  | 无  | [代码](https://github.com/max-andr/square-attack) | 无  | Cifar10、MNIST、ImageNet       |
-| Boundary Attack | × | ×   | √ | √ | √   | L2       | https://www.clarifai.com/          | [代码](https://github.com/bethgelab/foolbox)      | 无  | Cifar10、MNIST、ImageNet       |
+| Boundary Attack | × | × | √ | √ | √  | L2        | CL  | [代码](https://github.com/bethgelab/foolbox)      | 无  | Cifar10、MNIST、ImageNet       |
 | OPT-based     | × | ×   | √ | √ | √   | L2       | 无  | [代码](https://github.com/LeMinhThong/blackbox-attack) | 无  | Cifar10、MNIST、ImageNet       |
 | Opt-Attack    | × | ×   | √ | √ | √   | L2       | 无  | [代码](https://github.com/cmhcbb/attackbox)       | 无  | Cifar10、MNIST、ImageNet       |
-| Evolutionary  | × | ×   | √ | √ | √   | L2       | https://ai.qq.com/product/face.shtml#compare| [非官方代码](https://github.com/sgmath12/efficient-decision-based-black-box-adversarial-attacks-on-face-recognition) | 双线性插值            | MegaFace、LFW|
+| Evolutionary  | × | ×   | √ | √ | √   | L2       | QF| [非官方代码](https://github.com/sgmath12/efficient-decision-based-black-box-adversarial-attacks-on-face-recognition) | 双线性插值            | MegaFace、LFW|
 | HSJA          | × | ×   | √ | √ | √   | L2、Loo  | 无  | [代码](https://github.com/Jianbo-Lab/HSJA/)       | 无  | Cifar10、Cifar100、MNIST、ImageNet   |
-| QEBA          | × | ×   | √ | √ | √   | L2       | "https://console.faceplusplus.com/documents/5679308、https://tinyurl.com/t7ulxvx"    | [代码](https://github.com/AI-secure/QEBA)| DCT、PCA | ImageNet、CelebA  |
-| SFA           | × | ×   | √ | √ | √   | Loo      | "https://ai.qq.com/product/face.shtml#compare、https://ai.qq.com/product/visionimgidy.shtml#food" | 无| 双线性插值            | Cifar10、ImageNet |
+| QEBA          | × | ×   | √ | √ | √   | L2       | F++、MF | [代码](https://github.com/AI-secure/QEBA)| DCT、PCA | ImageNet、CelebA  |
+| SFA           | × | ×   | √ | √ | √   | Loo      | QF、QD  | 无  | 双线性插值            | Cifar10、ImageNet |
 | GeoDA         | × | ×   | √ | √ | √   | L1-oo    | 无  | [代码](https://github.com/thisisalirah/GeoDA)     | DCT | ImageNet     |
 | SurFree       | × | ×   | √ | √ | √   | L2       | 无  | [代码](https://github.com/t-maho/SurFree)| DCT | MNIST、ImageNet   |
 | Bayes Attack  | × | ×   | √ | √ | √   | L1-oo    | 无  | [代码](https://github.com/satyanshukla/bayes_attack)   | FFT、最近邻上采样     | Cifar10、MNIST、ImageNet       |
@@ -84,16 +84,16 @@
 | Tangent Attack| × | ×   | √ | √ | √   | L2、Loo  | 无  | [代码](https://github.com/machanic/TangentAttack) | 无  | Cifar10、ImageNet |
 | AutoDA        | × | ×   | √ | √ | √   | L2       | 无  | 无| 无  | Cifar10、ImageNet |
 | SparseEvo     | × | ×   | √ | √ | √   | L0+L2    | 无  | 无| 稀疏矩阵 | Cifar10、ImageNet |
-| LSMA          | √ | √   | × | √ | √   | Loo      | "https://www.metamind.io、https://aws.amazon.com/machine-learning、https://cloud.google.com/prediction/" | 无| 无  | MNIST、GTSRD |
+| LSMA          | √ | √   | × | √ | √   | Loo      | NG、AM、GV | 无| 无  | MNIST、GTSRD |
 | Curls&Whey    | √ | √   | × | × | √   | L2       | 无  | [代码](https://github.com/walegahaha/Curls-Whey)  | 无  | ImageNet     |
 | FIA           | √ | √   | × | √ | √   | Loo      | 无  | [代码](https://github.com/hcguoO0/FIA)   | 重要特征 | ImageNet     |
-| TREMBA        | √ | √   | × | √ | √   | Loo      | https://cloud.google.com/vision/docs/drag-and-drop            | [代码](https://github.com/TransEmbedBA/TREMBA)    | 特征嵌入 | Cifar10、ImageNet |
+| TREMBA        | √ | √   | × | √ | √   | Loo      | GV  | [代码](https://github.com/TransEmbedBA/TREMBA)    | 特征嵌入 | Cifar10、ImageNet |
 | PRGF          | √ | √   | × | × | √   | L2、Loo  | 无  | [代码](https://github.com/thu-ml/Prior-Guided-RGF)| 无  | ImageNet     |
 | PRGF-BS、PRGF-GA | √ | √ | ×| × | √   | L2、Loo  | 无  | [代码](https://github.com/thu-ml/Prior-Guided-RGF)| 无  | Cifar10、ImageNet |
 | LeBA          | √ | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/TrustworthyDL/LeBA)     | 无  | ImageNet     |
 | GFCS          | √ | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/fiveai/GFCS)   | 无  | Cifar10、ImageNet |
-| BBA           | √ | ×   | √ | √ | √   | L2、Loo  | https://cloud.google.com/vision/   | [代码](https://github.com/ttbrunner/biased_boundary_attack)  | 无  | ImageNet |
-| Simulator Attack  | √ | ×| × | √ | √   | L2、Loo  | 无  | [代码](https://github.com/machanic/SimulatorAttack)    | 无  | Cifar10、Cifar100、ImageNet    |
-| Ensemble-LSMA | √ | √   | × | √ | √   | Loo      | https://www.clarifai.com/          | 无| 无  | ILSVRC 2012、ImageNet          |
+| BBA           | √ | ×   | √ | √ | √   | L2、Loo  | GV  | [代码](https://github.com/ttbrunner/biased_boundary_attack)  | 无  | ImageNet |
+| Simulator Attack  | √ | ×| × | √ | √   | L2、Loo | 无  | [代码](https://github.com/machanic/SimulatorAttack)    | 无  | Cifar10、Cifar100、ImageNet    |
+| Ensemble-LSMA | √ | √   | × | √ | √   | Loo      | CL  | 无| 无  | ILSVRC 2012、ImageNet          |
 | MGAA          | √ | ×   | × | √ | √   | Loo      | 无  | 无| 无  | Cifar10、ImageNet |
 | GA            | √ | ×   | × | × | √   | Loo      | 无  | [代码](https://github.com/Equationliu/GA-Attack)  | 无  | ImageNet     |
