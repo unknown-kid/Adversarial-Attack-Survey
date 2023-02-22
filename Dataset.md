@@ -1,16 +1,21 @@
 # Dataset
 
-|       |                     |       |        |                  |           | 数据地址                                                    |
+## 测试平台
+
+|  简称 |       平台名         |  类型 |        |                  |           | 数据地址                                                    |
 |:-----:|:-------------------:|:-----:|:------:|:----------------:|:---------:|:--------------------------------------------------------------:|
-| NG    | Nginx               |       |        |                  |           | [地址](https://www.metamind.io)                                 |
-| CL    | Clarifai            |       |        |                  |           | [地址](https://www.clarifai.com/)                               |
+| NG    | Nginx               | 图像分类 |        |                  |           | [地址](https://www.metamind.io)                                 |
+| CL    | Clarifai            |  图像分类 |        |                  |           | [地址](https://www.clarifai.com/)                               |
 | QF    | QQ-Face             | 人脸识别  |        |                  |           | [地址](https://ai.qq.com/product/face.shtml#compare)            |
 | QD    | QQ-Food             | 食物分类  |        |                  |           | [地址](https://ai.qq.com/product/visionimgidy.shtml#food)       |
 | F++   | Face++              | 人脸识别  |        |                  |           | [地址](https://console.faceplusplus.com/documents/5679308)      |
 | MF    | Microsoft Face      | 人脸识别  |        |                  |           | [地址](https://tinyurl.com/t7ulxvx)                             |
-| AM    | Amazon              |       |        |                  |           | [地址](https://aws.amazon.com/machine-learning)                 |
+| AM    | Amazon              | 图像分类 |        |                  |           | [地址](https://aws.amazon.com/machine-learning)                 |
 | GV    | Google Cloud Vision | 图像分类  |        |                  |           | [地址](https://cloud.google.com/vision/docs/drag-and-drop)      |
-|       |                     | 名称    | 类别     | 数量               | 大小     |                                                         |
+
+## 数据集
+|  简称  |    数据集        | 类型    | 类别数     | 数量         | 图像大小     |  数据地址                                                 |
+|:-----:|:-------------------:|:-----:|:------:|:----------------:|:---------:|:--------------------------------------------------------------:|
 | MNT   | MNIST               | 手写数字  | 10     | 60000 / 10000    | 28 x 28   | [地址](http://yann.lecun.com/exdb/mnist/)                       |
 | C10   | CIFAR10             | 图像分类  | 10     | 50000 / 10000    | 32 x 32   | [地址](http://www.cs.utoronto.ca/~kriz/cifar.html)              |
 | C100  | CIFAR100            | 图像分类  | 100    | 50000 / 10000    | 32 x 32   | [地址](http://www.cs.toronto.edu/~kriz/cifar.html)              |
