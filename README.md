@@ -36,27 +36,26 @@
 ### 白盒攻击
 
 | 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
-|---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|-----------| 
-| FGSM          | × | × | × | √ | √ | Loo     | 无 | [非官方代码](https://github.com/1Konny/FGSM)                                                                   | 无 | Cifar10、MNIST、ImageNet |
-| I-FGSM        | × | × | × | √ | √ | Loo     | 无 | [非官方代码](https://github.com/1Konny/FGSM)                                                                  | 无 | Cifar10、MNIST、ImageNet | 
-| MI-FGSM       | × | × | × | √ | √ | Loo、L2 | 无 | [代码](https://github.com/dongyp13/Non-Targeted-Adversarial-Attacks)                                            | 无 | ImageNet |
-| DII-FGSM、M-DII-FGSM | × | × | × | × | √ | Loo | 无 | [代码](https://github.com/cihangxie/DI-2-FGSM)                                                                       | 无 | ImageNet |  
-| VMI-FGSM      | × | × | × | × | √ | Loo     | 无 | [代码](https://github.com/JHL-HUST/VT)                                                                        | 无 | ImageNet |  
-| PGD           | × | × | × | × | √ | Loo     | 无 |  [非官方代码](https://github.com/Harry24k/PGD-pytorch)                                               | 无 | Cifar10、MNIST |
-| EAD           | × | × | × | √ | √ | L1+L2   | 无 | [代码](https://github.com/ysharma1126/EAD-Attack)                                                   | 无 | Cifar10、MNIST、ImageNet  | 
-| L-BFGS        | × | × | × | √ | √ | L2      | 无 | [非官方代码](https://github.com/AmineDiro/Adversarial-Attacks/blob/main/Attacks/LBFGS.py)            | 无 | YouTube、MNIST、ImageNet | 
-| C&W           | × | × | × | √ | √ | Loo、L2、L0  | 无 | https://github.com/carlini/nn_robust_attacks                                                   | 无 | Cifar10、MNIST、ImageNet |  
-| ATNs          | × | × | × | √ | √ | L2      | 无 | [非官方代码](https://github.com/henryliuw/Gradient-Adversarial-Transformation-Network)                            | 无 | MNIST、ImageNet  | 
-| DeepFool      | × | × | × | × | √ | L1-oo   | 无 | [代码](https://github.com/lts4/deepfool)                                                                    | 无 | Cifar10、MNIST、ImageNet       | 
-| UAP           | × | × | × | × | √ | L1-oo   | 无 | [代码](https://github.com/LTS4/universal)                                                                   | 无 | MNIST、ImageNet   | 
-| JSMA          | × | × | × | √ | √ | L0      | 无 | [代码](https://github.com/FenHua/Adversarial-Examples/blob/master/%E9%BB%91%E7%9B%92/JSMA/)                |显著图 | MNIST  |
-| CAG           | × | × | × | √ | √ | L2      | 无 | 无 | CAM | Cifar10、ImageNet |
-| FineFool      | × | ×  | × | √ | √| L2       | 无  | [代码](https://zenodo.org/record/4421611#.X)      | 注意力机制            | Cifar10、MNIST、ImageNet       | 
-| Homotopy-Attack | × | × | × | √ | √ | Loo、L2、L1、L0 | 无  | [代码](https://github.com/VITA-Group/SparseADV_Homotopy)            | 无  | Cifar10、ImageNet |
-| NI-PM-FGSM    | × | ×   | × | √ | √ | Loo      | 无  | 无| 无  | ImageNet     | |
-| FGNM          | × | ×   | × | √ | √ | Loo  | 无  | [代码](https://github.com/yaya-cheng/FGNM)        | 无  | ImageNet     |
-| UAE           | × | ×   | × | √ | √ | Loo、L2、L0     | 无  | 无| 无  | MNIST、SVHN、CelebA           |
-
+|---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|
+| FGSM                 | × | × | × | √ | √ | Loo            | 无 | [非官方代码](https://github.com/1Konny/FGSM)                                                | 无  | Cifar10、MNIST、ImageNet |
+| I-FGSM               | × | × | × | √ | √ | Loo            | 无 | [非官方代码](https://github.com/1Konny/FGSM)                                                | 无  | Cifar10、MNIST、ImageNet | 
+| MI-FGSM              | × | × | × | √ | √ | Loo、L2        | 无 | [代码](https://github.com/dongyp13/Non-Targeted-Adversarial-Attacks)                        | 无  | ImageNet |
+| DII-FGSM、M-DII-FGSM | × | × | × | × | √ | Loo            | 无 | [代码](https://github.com/cihangxie/DI-2-FGSM)                                              | 无  | ImageNet |  
+| VMI-FGSM             | × | × | × | × | √ | Loo            | 无 | [代码](https://github.com/JHL-HUST/VT)                                                      | 无  | ImageNet |  
+| PGD                  | × | × | × | × | √ | Loo            | 无 |  [非官方代码](https://github.com/Harry24k/PGD-pytorch)                                      | 无   | Cifar10、MNIST |
+| EAD                  | × | × | × | √ | √ | L1+L2          | 无 | [代码](https://github.com/ysharma1126/EAD-Attack)                                           | 无  | Cifar10、MNIST、ImageNet  | 
+| L-BFGS               | × | × | × | √ | √ | L2             | 无 | [非官方代码](https://github.com/AmineDiro/Adversarial-Attacks/blob/main/Attacks/LBFGS.py)   | 无   | YouTube、MNIST、ImageNet | 
+| C&W                  | × | × | × | √ | √ | Loo、L2、L0    | 无 | [代码](https://github.com/carlini/nn_robust_attacks)                                        | 无  | Cifar10、MNIST、ImageNet |  
+| ATNs                 | × | × | × | √ | √ | L2             | 无 | [非官方代码](https://github.com/henryliuw/Gradient-Adversarial-Transformation-Network)       | 无  | MNIST、ImageNet  | 
+| DeepFool             | × | × | × | × | √ | L1-oo          | 无 | [代码](https://github.com/lts4/deepfool)                                                    | 无  | Cifar10、MNIST、ImageNet       | 
+| UAP                  | × | × | × | × | √ | L1-oo          | 无 | [代码](https://github.com/LTS4/universal)                                                   | 无   | MNIST、ImageNet   | 
+| JSMA                 | × | × | × | √ | √ | L0             | 无 | [代码](https://github.com/FenHua/Adversarial-Examples/blob/master/%E9%BB%91%E7%9B%92/JSMA/) |显著图| MNIST  |
+| CAG                  | × | × | × | √ | √ | L2             | 无 | 无                                                                                          | CAM | Cifar10、ImageNet |
+| FineFool             | × | × | × | √ | √ | L2             | 无  | [代码](https://zenodo.org/record/4421611#.X)                                               | 注意力机制   | Cifar10、MNIST、ImageNet  | 
+| Homotopy-Attack      | × | × | × | √ | √ | Loo、L2、L1、L0 | 无  | [代码](https://github.com/VITA-Group/SparseADV_Homotopy)                                   | 无  | Cifar10、ImageNet |
+| NI-PM-FGSM           | × | × | × | √ | √ | Loo             | 无  | 无                                                                                        | 无  | ImageNet     |
+| FGNM                 | × | × | × | √ | √ | Loo             | 无  | [代码](https://github.com/yaya-cheng/FGNM)                                                | 无  | ImageNet     |
+| UAE                  | × | × | × | √ | √ | Loo、L2、L0     | 无  | 无                                                                                        | 无  | MNIST、SVHN、CelebA    |
 ### 黑盒攻击
 
 | 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
