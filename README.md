@@ -59,7 +59,7 @@
 ### 黑盒攻击
 
 | 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
-|---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|-----------| 
+|---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|
 | ZOO           | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/huanzhang12/ZOO-Attack) | 双线性插值            | Cifar10、MNIST、ImageNet       |
 | NES           | × | √   | × | √ | √   | Loo      | https://cloud.google.com/vision/   | [代码](https://github.com/labsix/limited-blackbox-attacks)          | 无  | ImageNet     |
 | AutoZOOM      | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/IBM/Autozoom-Attack)    | 双线性插值            | Cifar10、MNIST、ImageNet       |
