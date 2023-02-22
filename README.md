@@ -33,6 +33,8 @@
 
 ## 攻击方法
 
+### 白盒攻击
+
 | 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
 |---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|-----------| 
 | FGSM          | × | × | × | √ | √ | Loo     | 无 | [非官方代码](https://github.com/1Konny/FGSM)                                                                   | 无 | Cifar10、MNIST、ImageNet |
@@ -54,8 +56,11 @@
 | NI-PM-FGSM    | × | ×   | × | √ | √ | Loo      | 无  | 无| 无  | ImageNet     | |
 | FGNM          | × | ×   | × | √ | √ | Loo  | 无  | [代码](https://github.com/yaya-cheng/FGNM)        | 无  | ImageNet     |
 | UAE           | × | ×   | × | √ | √ | Loo、L2、L0     | 无  | 无| 无  | MNIST、SVHN、CelebA           |
-| NRF           |   |   |   |   ||   | | |
-| 黑盒          |   |   |   |    ||   | | |
+
+### 黑盒攻击
+
+| 方法名称 | 替代 | 置信度 | 决策 | 目标 | 非目标 | 范式  | 商业模型实验  | 代码地址 | 降维 | 数据集 | 
+|---------|-------|------|--------|-----|----------|--------|----|----------|--------|---------|-----------| 
 | ZOO           | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/huanzhang12/ZOO-Attack) | 双线性插值            | Cifar10、MNIST、ImageNet       |
 | NES           | × | √   | × | √ | √   | Loo      | https://cloud.google.com/vision/   | [代码](https://github.com/labsix/limited-blackbox-attacks)          | 无  | ImageNet     |
 | AutoZOOM      | × | √   | × | √ | √   | L2       | 无  | [代码](https://github.com/IBM/Autozoom-Attack)    | 双线性插值            | Cifar10、MNIST、ImageNet       |
